@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 import * as clack from "@clack/prompts";
 import {intro, outro} from "@clack/prompts";
 

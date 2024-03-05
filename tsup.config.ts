@@ -10,12 +10,4 @@ export default defineConfig({
   clean: true,
   shims: true,
   outDir: "dist",
-
-  async onSuccess() {
-    await cp(
-      path.join(path.dirname(fileURLToPath(import.meta.url)), "projects"),
-      path.join("dist", "projects"),
-      {recursive: true},
-    );
-  },
 });
